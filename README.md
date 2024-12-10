@@ -1,5 +1,11 @@
 # Checkpoint24_2o2_Jenkins_Ros2
 
+### How to solve this checkpoint
+- Done build docker that could test the tortoisebot_waypoints
+- Jenkins
+    - Create a Jenkins pipeline for automating the test process
+    - Automate the test process on each Git push, pull request
+
 ## Build and run dockers manually
 
 In this section, more details about how to build an run docker is written.
