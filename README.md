@@ -103,7 +103,7 @@ password is
 
 Add new pipeline, name it ros2_ci as shown in the image
 
-![alt text](Jenkins_website_a1_00)
+![alt text](Jenkins_website_a1_00.png)
 
 ### Step 3. Automate the test process on each Git push, pull request
 
