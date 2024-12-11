@@ -1,5 +1,61 @@
 # Checkpoint24_2o2_Jenkins_Ros2
 
+## Quick guide
+
+1. install docker
+
+```
+cd 
+./course_install.sh
+```
+To make docker run on user without sudo
+
+```
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo gpasswd -a $USER docker
+newgrp docker
+```
+
+2. start jenkins
+
+```
+cd ~/webpage_ws
+./start_jenkins.sh
+```
+
+The 3 latest output of start_jenkins.sh should show the following data
+- jenkins website
+- password
+- webhook
+
+3. Copy webhook address to clipboard, and paste it at your github repository
+
+![alt text](Jenkins_website_79_04.png)
+
+
+4. sign in jenkins
+
+5. copy ssh_config to ~/.ssh/config
+
+```
+cd /home/user/catkin_ws/src/ros1_ci
+cp ssh_config ~/.ssh/config
+```
+
+6. Generate two ssh keys
+
+```
+cd ~/webpage_ws
+bash setup_ssh_git.sh
+bash setup_2nd_ssh_git.sh
+rm ~/.ssh/known_hosts
+```
+
+7. create jenkins user credential for both project
+8. change deploy key on Github for both projects
+9. config git source for both projects.
+
 
 ## Jenkins
 - Create a Jenkins pipeline for automating the test process
